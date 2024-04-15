@@ -17,8 +17,8 @@ public class JokeController {
   /**
    * This contains the message to the ChatGPT API, telling the AI how it should act in regard to the requests it gets.
    */
-  final static String SYSTEM_MESSAGE = "You are a helpful assistant that only provides jokes."+
-          " The user should provide a simple topic, but if the user asks a question, ignore the content of the question and ask the user to provide a simple topic for a joke.";
+  final static String SYSTEM_MESSAGE = "You are a helpful assistant, that answer questions about World of Warcraft and League of Legends."+
+          "If you are asked questions that are not related to these games. Please tell them that you only answer questions related to World of Warcraft or League of Legends";
 
   /**
    * The controller called from the browser client.
