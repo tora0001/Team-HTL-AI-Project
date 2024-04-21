@@ -12,19 +12,27 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/main.js"></script>
+    <style>
+        body {
+            background-image: url('./images/wowlolimage.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 
 <body>
 
 <div class="container">
-    <h2>The unofficial assistant for WoW and LoL</h2>
+
 
     </ol>
     <br>
     </div>
     <div class="container">
 
-        <div class="card m-3">
+        <div class="card m-3 wow">
             <div class="card-body">
                 <h5 class="card-title">Your personal World of Warcraft assistant</h5>
                 <form id="form-joke" class="container">
@@ -35,7 +43,7 @@
                     </div>
                     <div class="row mt-3">
                         <div class="column text-end">
-                            <button type="submit" class="btn btn-primary" id="btn-get-joke">Generate answer</button>
+                            <button type="submit" class="btn btn-primary" id="btn-get-wow">Generate answer</button>
                         </div>
                     </div>
                 </form>
@@ -49,19 +57,19 @@
         </div>
 
 
-        <div class="card m-3">
+        <div class="card m-3 lol">
             <div class="card-body">
                 <h5 class="card-title">Your personal League of Legends assistant</h5>
 
                 <form id="form-joke2" class="container">
 
                     <div class="row">
-                        <label for="about2">Question</label> <input type="text" id="about2"
+                        <label for="about2">Question</label> <input type="text" id="about2" class="result"
                                                                  placeholder="Ask a question about League of Legends">
                     </div>
                     <div class="row mt-3">
                         <div class="column text-end">
-                            <button class="btn btn-primary" id="btn-get-joke2">Generate answer</button>
+                            <button class="btn btn-primary" id="btn-get-lol">Generate answer</button>
                         </div>
                     </div>
                 </form>

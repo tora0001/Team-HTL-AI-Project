@@ -1,9 +1,41 @@
 .result {
     font-size: large;
-    font-style: italic;
     color: darkblue;
+    text-align: center;
 }
 
 label {
+    text-align: center;
     font-weight: bold;
 }
+
+.card {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), #9c9999, rgba(255, 255, 255, 0.4));
+    text-align: center;
+}
+
+
+.wow {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+}
+
+.lol {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    background: darkolivegreen;
+    border: black;
+}
+
+
