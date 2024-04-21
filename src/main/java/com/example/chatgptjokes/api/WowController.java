@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/v1/joke")
 @CrossOrigin(origins = "*")
-public class JokeController {
+public class WowController {
 
   private final OpenAiService service;
 
@@ -24,7 +24,7 @@ public class JokeController {
    * The controller called from the browser client.
    * @param service
    */
-  public JokeController(OpenAiService service) {
+  public WowController(OpenAiService service) {
     this.service = service;
   }
 
