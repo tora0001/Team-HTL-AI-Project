@@ -17,38 +17,25 @@
 <body>
 
 <div class="container">
-    <h2>Open AI Demo</h2>
+    <h2>The unofficial assistant for WoW and LoL</h2>
 
-    <p>This Open AI project demonstrates 3 ways to use Open AI's Chat Completion API</p>
-    <ol>
-        <li>A simple possible example requesting the API for a joke, given a topic.</li>
-        <li>Same example as above, but with IP-rate limiting.</li>
-        <li>An example on how to feed your own info into the API-request.</li>
     </ol>
     <br>
-    <div class="row">
-        <div class="column text-center">
-        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#infoModal">
-            Important read!
-        </button>
-        </div>
     </div>
     <div class="container">
 
         <div class="card m-3">
             <div class="card-body">
-                <h5 class="card-title">Ask any question about World of Warcraft</h5>
+                <h5 class="card-title">Your personal World of Warcraft assistant</h5>
                 <form id="form-joke" class="container">
 
                     <div class="row">
-                        <p class="card-text">The simplest possible example, requesting the API for a joke, given a
-                            topic.</p>
-                        <label for="about">Topic</label> <input type="text" id="about" class="result"
-                                                                placeholder="Enter topic for a joke">
+                        <label for="about">Question</label> <input type="text" id="about" class="result"
+                                                                placeholder="Ask a question about World of Warcraft">
                     </div>
                     <div class="row mt-3">
                         <div class="column text-end">
-                            <button type="submit" class="btn btn-primary" id="btn-get-joke">Get Joke</button>
+                            <button type="submit" class="btn btn-primary" id="btn-get-joke">Generate answer</button>
                         </div>
                     </div>
                 </form>
@@ -64,18 +51,17 @@
 
         <div class="card m-3">
             <div class="card-body">
-                <h5 class="card-title">Get Joke (with IP-rate limiting)</h5>
+                <h5 class="card-title">Your personal League of Legends assistant</h5>
 
                 <form id="form-joke2" class="container">
 
                     <div class="row">
-                        <p class="card-text">Same as above, but with IP-rate limitation.</p>
-                        <label for="about2">Topic</label> <input type="text" id="about2"
-                                                                 placeholder="Enter topic for a joke">
+                        <label for="about2">Question</label> <input type="text" id="about2"
+                                                                 placeholder="Ask a question about League of Legends">
                     </div>
                     <div class="row mt-3">
                         <div class="column text-end">
-                            <button class="btn btn-primary" id="btn-get-joke2">Get Joke (with IP-rate limiting)</button>
+                            <button class="btn btn-primary" id="btn-get-joke2">Generate answer</button>
                         </div>
                     </div>
                 </form>
@@ -88,45 +74,6 @@
                 <p id="result2" class="result"></p>
             </div>
         </div>
-
-        <div class="card m-3">
-            <div class="card-body">
-                <h5 class="card-title">Demonstrates how to feed own info into the API-request</h5>
-
-                <form id="form-answer">
-                    <div class="row">
-                    <div class="column mb-3">
-
-                        <button type="button" class="btn btn-dark btn-sm" data-bs-toggle="modal"
-                                data-bs-target="#owninfoModal">
-                            How to use this example!
-                        </button>
-                    </div>
-                    </div>
-                    <div class="container">
-
-                        <div class="row">
-          <label for="the-question">Question </label><textarea cols="100" rows="3" id="the-question"
-                    placeholder="Enter a question related to this ChatGPT example"></textarea>
-                        </div>
-
-                        <div class="row">
-                            <div class="column text-end mt-3">
-                                <button type="submit" class="btn btn-primary" id="btn-get-answer">Get answer</button>
-                            </div>
-                        </div>
-                        <div id="spinner3" class="spinner-border-lg spinner-border text-success" role="status"
-                             style="margin:1em;border-radius: 50%;display:none;width: 3rem; height: 3rem;">
-                            <span class=" visually-hidden">Loading...</span>
-                        </div>
-
-                    </div>
-                </form>
-                <p id="result3" class="result"></p>
-
-            </div>
-        </div>
-    </div>
 
 
     <!-- Modal 1 Disclaimer about Deployment -->
