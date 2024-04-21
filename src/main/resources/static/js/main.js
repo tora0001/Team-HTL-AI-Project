@@ -31,15 +31,15 @@ async function getLoL(event) {
   // Prevent the form from reloading the page.
   event.preventDefault();
 
-  const URL = `${SERVER_URL}lol?about= + ${document.getElementById('about').value}`
-  const spinner = document.getElementById('spinner1');
-  const result = document.getElementById('result');
+  const URL = `${SERVER_URL}lol?about= + ${document.getElementById('about2').value}`
+  const spinner = document.getElementById('spinner2');
+  const result = document.getElementById('result2');
   result.style.color = "black";
 
   try {
     spinner.style.display = "block";
     const response = await fetch(URL).then(handleHttpErrors)
-    document.getElementById('result').innerText = response.answer;
+    document.getElementById('result2').innerText = response.answer;
   } catch (e) {
     result.style.color = "red";
     result.innerText = e.message;

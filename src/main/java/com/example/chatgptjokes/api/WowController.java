@@ -34,7 +34,7 @@ public class WowController {
    * @return the response from ChatGPT.
    */
   @GetMapping
-  public MyResponse getJoke(@RequestParam String about) {
+  public MyResponse getWoW(@RequestParam String about) {
 
     return service.makeRequest(about,SYSTEM_MESSAGE);
   }
