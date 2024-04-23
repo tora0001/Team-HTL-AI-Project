@@ -26,7 +26,7 @@ Observe the other version provides better error handling. Add this if you want t
 public class OpenAiServiceV1 {
 
 
-  @Value("${app.api-key}")
+  @Value("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")
   private String API_KEY;
 
   //See here for a decent explanation of the parameters send to the API via the requestBody
