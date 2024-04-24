@@ -7,7 +7,6 @@ public class SummonerIDResponse {
     private String id;
 
     // Getter and setter for summoner ID
-
     public String getId() {
         return id;
     }

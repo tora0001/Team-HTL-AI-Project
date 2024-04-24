@@ -30,6 +30,17 @@ label {
     transform: translateX(-50%);
     width: 25%;
 }
+.summoner {
+    position: absolute;
+    right: 0%;
+    top: 5%;
+    transform: translateX(-50%);
+    width: 25%;
+    max-height: 300px; /* Adjust the maximum height as needed */
+}
+.summoner p {
+    margin: 0px 0; /* Adjust the top and bottom margins */
+}
 
 .btn {
     display: block;

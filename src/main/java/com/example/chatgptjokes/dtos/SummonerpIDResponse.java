@@ -6,6 +6,7 @@ public class SummonerpIDResponse {
     @JsonProperty("puuid")
     private String pid;
 
+     // Getter and setter
     public String getPid() {
         return pid;
     }

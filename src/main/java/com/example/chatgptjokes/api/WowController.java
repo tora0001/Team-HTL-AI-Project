@@ -4,9 +4,6 @@ import com.example.chatgptjokes.dtos.MyResponse;
 import com.example.chatgptjokes.service.OpenAiService;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * This class handles fetching a joke via the ChatGPT API
- */
 @RestController
 @RequestMapping("/api/v1/wow")
 @CrossOrigin(origins = "*")

@@ -26,25 +26,7 @@ public class SummonerInfoResponse {
         this.losses = losses;
     }
 
-    private List<Map<String, Object>> leagueInfo;
-    @Override
-    public String toString() {
-        return "SummonerInfoResponse{" +
-                ", tier='" + tier + '\'' +
-                ", rank='" + rank + '\'' +
-                ", wins=" + wins +
-                ", losses=" + losses +
-                '}';
-    }
-    public void setLeagueInfo(List<Map<String, Object>> leagueInfo) {
-        this.leagueInfo = leagueInfo;
-    }
-    public class SummonerInfoResponseArray {
-        @JsonProperty
-        private SummonerInfoResponse[] data;
-    }
     // Getters and setters
-
     public String getTier() {
         return tier;
     }
