@@ -33,7 +33,7 @@ public class OpenAiService {
   public static final Logger logger = LoggerFactory.getLogger(OpenAiService.class);
 
   // @Value("${app.api-key}")
-  private String API_KEY = "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";
+  private String API_KEY = "";
 
   //See here for a decent explanation of the parameters send to the API via the requestBody
   //https://platform.openai.com/docs/api-reference/completions/create

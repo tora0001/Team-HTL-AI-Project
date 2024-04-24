@@ -19,7 +19,7 @@ import java.util.*;
 public class SummonerSearchService {
 
     public static final Logger logger = LoggerFactory.getLogger(SummonerSearchService.class);
-    private String API_KEY = "RGAPI-2fd6a6fd-312e-4643-a43a-dae4e254f362";
+    private String API_KEY = "";
 
     public String getpID_URL = "https://europe.api.riotgames.com/riot/account/v1/accounts/by-riot-id/";
 
